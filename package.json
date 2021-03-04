@@ -1,0 +1,45 @@
+{
+  "name": "derby-shop",
+  "version": "1.0.0",
+  "description": "Starter project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjairm/houseshop.git"
+  },
+  "dependencies": {
+    "coffeescript": "^1.12.7",
+    "d-barchart": "^0.1.0",
+    "d-barchart-vanilla": "^0.1.0",
+    "d-before-unload": "^0.1.0",
+    "d-bootstrap": "^0.1.0",
+    "d-codemirror": "git://github.com/derbyjs/d-codemirror.git#v0.2.9",
+    "d-connection-alert": "^0.1.0",
+    "d-d3-barchart": "^0.1.0",
+    "derby": "^0.10.29",
+    "derby-debug": "^0.1.0",
+    "derby-starter": "^0.4.8",
+    "derby-stylus": "^0.3.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "showdown": "^1.8.6"
+  },
+  "optionalDependencies": {},
+  "devDependencies": {},
+  "keywords": [
+    "derby",
+    "javascript",
+    "lever",
+    "derbyjs"
+  ],
+  "author": "Jair Mendez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjairm/houseshop/issues"
+  },
+  "homepage": "https://github.com/cjairm/houseshop#readme"
+}

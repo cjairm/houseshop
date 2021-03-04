@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+    derby:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        ports:
+            - "8080:3000"
+        volumes:
+            - ./:/derby_project
+            - /derby_project/node_modules
+        environment:
+            - CHOKIDAR_USEPOLLING=true
+        stdin_open: true
