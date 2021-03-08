@@ -2,18 +2,25 @@ version: "3.8"
 
 services:
     mongo:
+        container_name: mongo-database
         image: mongo:3.4
         ports:
-            - "27017:27017"
+            - 27017:27017
+
+    # redis:
+    #     image: redis:3
+    #     ports:
+    #         - "6379:6379"
+
     derby:
+        container_name: derby-app
         build:
             context: ./
             dockerfile: Dockerfile
+        depends_on:
+            - mongo
         ports:
-            - 8000:3456
-        network_mode: host
+            - 3456:3456
         volumes:
             - ./:/derby_project
-            - /derby_project/node_modules
-        depends_on: 
-            - mongo
+            - /derby_project/node_module
