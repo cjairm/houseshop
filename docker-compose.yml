@@ -10,7 +10,7 @@ services:
     # redis:
     #     image: redis:3
     #     ports:
-    #         - "6379:6379"
+    #         - 6379:6379
 
     derby:
         container_name: derby-app
@@ -23,4 +23,4 @@ services:
             - 3456:3456
         volumes:
             - ./:/derby_project
-            - /derby_project/node_module
+            - /derby_project/node_modules

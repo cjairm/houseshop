@@ -8,10 +8,6 @@ const mainController = require("./controllers/index");
 
 app.loadViews(`${__dirname}/pages`);
 
-app.get("/", mainController.firstController);
-
-//app.use((error, page, model) => {
-	//console.log(error);
-//});
+app.get("/", mainController.homeController);
 
 module.exports = app;

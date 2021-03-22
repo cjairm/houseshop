@@ -1,4 +1,4 @@
-exports.firstController = (page, model, params, next) => {
+exports.homeController = (page, model, params, next) => {
 	const example = model.at("controllerswithdata.example");
 	example.subscribe(function (err) {
 		if (err) return next(err);

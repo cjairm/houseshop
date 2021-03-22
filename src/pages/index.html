@@ -37,3 +37,40 @@
 			<p class="fs-6">We close the process</p>
 		</div>
 	</div>
+
+	<div class="container">
+		<div class="row mb-3 justify-content-md-center">
+			<view 
+				is="card"
+				name="House one"
+			/>
+			<view is="card" 
+				is="card"
+				name="House two"
+			/>
+			<view is="card" 
+				is="card"
+				name="House 3"
+			/>
+			<view is="card" 
+				is="card"
+				name="House four"
+			/>
+			<view is="card"></view>
+			<view is="card"></view>
+			<view is="card"></view>
+		</div>
+	</div>
+
+
+<card: >
+	<div class="col-md-4">
+		<div class="card mx-auto my-2" style="width: 18rem;">
+			<img src="https://media1.s-nbcnews.com/i/newscms/2018_30/1355945/home-exterior-today-180726-tease_3f99937c609d875fece6a12af1594bd9.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">{{ name || "Card title" }}</h5>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			</div>
+		</div>
+	</div>
